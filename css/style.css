@@ -48,14 +48,13 @@ body{
     align-items: flex-start;
 }
 
-
 .w-30{
     width: 30%;
     font-size: 15px;
+    line-height: 20px;
     padding-top: 70px;
     position: relative;
 }
-
 .w-70{
     width: 70%;
     padding-top: 70px;
@@ -74,7 +73,7 @@ li{
     padding: 16px;
     list-style: none;
 }
-li a{
+li > a{
     color: var(--black);
     text-decoration: none;
     font-size: 15px;
@@ -94,7 +93,7 @@ li a{
     color: var(--white);
 }
 #hero{
-    background-color: var(--lightblue);
+    background-color: var(--heavenly);
     padding-top: 80px;
 }
 #hero .container-big{
@@ -107,15 +106,16 @@ li a{
 h1{
     font-size: 76px;
 }
+.w-30 > .btn-blue{
+    margin: 35px 0px;
+}
 
 .fa-arrow-down{
     position: absolute;
-    bottom: 80px;
+    bottom: 100px;
     left: 0;
     font-size: 45px;
 }
-
-
 
 /* main */
 
