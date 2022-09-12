@@ -70,6 +70,7 @@ body{
     width: 70%;
     padding-top: 70px;
 }
+
 /* header */
 /* navbar */
 header nav{
@@ -146,7 +147,10 @@ h2{
     padding-bottom: 50px;
 }
 .card-conteiner{
-    width: calc(100 / 3)
+    width: calc((100 - 100) / 3)
+}
+.card{
+    width: 300px;
 }
 
 .check{
@@ -162,12 +166,13 @@ h2{
 .titolo-card{
     padding: 12px 0px;
     text-align: center;
+    border-bottom: 1px solid var(--lightgray);
 }
 .main-card{
     padding-left: 32px;
 
 }
-.costi , .funzioni{
+.costi {
     padding-top: 40px;
 }
 .costi h4{
@@ -178,10 +183,11 @@ h2{
     color: gray;
 }
 .funzioni div{
-    padding: 15px 0;
+    padding: 15px 5px;
 
 }
-.funzioni{
+.contenitore-funzioni{
+    padding-top: 40px;
     padding-bottom: 50px;
     padding-right: 20px;
 }
@@ -203,11 +209,29 @@ h2{
 .fa-check{
     color: var(--blue);
 }
-.punti-salienti{
-    display: flex;
-    align-content: space-between;
-    padding-right: 20px;
+
+/* card grande */
+.big-card-container{
+    margin-top: 50px;
 }
+.big-card{
+    padding: 35px;
+
+}
+.big-card-container #costi{
+    width: 70%;
+}
+#costi h4 {
+    padding-top: 20px;
+}
+#costi p{
+    padding-top: 60px;
+}
+
+#contattaci{
+    width: 30%;
+}
+
 
 
 
@@ -220,3 +244,5 @@ footer{
     background-color: var(--black);
     color: var(--white);
 }
+
+
