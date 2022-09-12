@@ -132,6 +132,7 @@ h1{
 }
 
 /* main */
+/* prima sezione */
 h2{
     font-size: 30px;
 }
@@ -184,7 +185,6 @@ h2{
 }
 .funzioni div{
     padding: 15px 5px;
-
 }
 .contenitore-funzioni{
     padding-top: 40px;
@@ -231,7 +231,45 @@ h2{
 #contattaci{
     width: 30%;
 }
+/* fine prima sezione */
 
+/* seconda sezione */
+#partner{
+    padding: 60px 49px;
+}
+#partner p{
+    padding: 20px 0;
+    line-height: 20px;
+}
+.w-60{
+    width: 60%;
+}
+.w-40{
+    width: 40%;
+}
+#second img{
+    width: 100%;
+}
+.btn-white{
+    background-color: var(--white);
+    color: var(--black);
+    border: 1px solid var(--black);
+    padding: 11px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 20px 4px 0px; 
+    cursor: pointer;
+}
+#third h2{
+    margin-bottom: 60px;
+}
+#third img{
+    width: 100%;
+}
+.line-height{
+    line-height: 20px;
+}
 
 
 
