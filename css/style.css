@@ -3,15 +3,16 @@
     --white: #ffffff;
     --heavenly: #b4d0e7;
     --black: #000000;
-    --blue: #0061ff;
+    --blue: #0093ce;
+    --darkblue: #0061ff;
     --lightblue : #34a4d1;
-    --lime: #afd4aa;
-    --lightlime: #d3e5d0;
-    --bordeaux: #7e3a55;
-    --red: #f64949;
-    --pink: #d6344c;
-    --purple: #3e4f96;
-    --yellow: #f6d859;
+    --lime: #8fba89;
+    --lightlime: #b8cdb5;
+    --bordeaux: #61082b;
+    --red: #ff1c1c;
+    --pink: #d5001f;
+    --purple: #0d2481;
+    --yellow: #ffd830;
     --lightgray: #d0d0d3;
 }
 
@@ -136,13 +137,10 @@ h1{
 h2{
     font-size: 30px;
 }
-.fa-circle{
-    color: var(--lightgray);
+div#radio-find label {
+    padding: 30px;
 }
 
-.fa-circle:hover{
-    color: var(--blue);
-}
 .fatturazioni{
     padding-top: 70px;
     padding-bottom: 50px;
@@ -277,11 +275,26 @@ h2{
 }
 /*************************fine-prima-seconda*****************/
 /*************************quinta-sezione*********************/
+#fifth-section {
+    width: 100%;
+    margin: 0;
+}
 .square{
-    width: 300px;
-    height: 300px;
+    width: 50%;
+    height: 50%;
     position: relative;
 }
+.squares{
+    width: calc(100% / 3);
+    flex-wrap: wrap;
+    position: relative;
+}
+.squares:after {
+    content: "";
+    display: block;
+    padding-bottom: 100%;
+}
+/**************immagini-loghi-in-quadrati-piccoli************/
 .square img{
     /* fill: var(--white); */
     width: 50%;
@@ -291,6 +304,32 @@ h2{
     left: 50%;
     transform: translate(-50%, -50%)
 }
+
+/**********************quadrato-centrale********************/
+.square-big-central {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow-y: auto;
+}
+
+div.square-big-central img,
+div.square-big-central p {
+    padding: 30px;
+}
+
+div.square-big-central img {
+    width: 60%;
+}
+.square-big-central hr{
+    width: 100px;
+    margin-left: 30px;
+}
+
+/**********************colori-quadrati********************/
 .lime{
     background-color: var(--lime);
     border: 15px solid var(--lightlime);
@@ -298,9 +337,67 @@ h2{
 .lightblue{
     background-color: var(--lightblue);
 }
+.bordeaux{
+    background-color: var(--bordeaux);
+}
+.red{
+    background-color: var(--red);
+}
+.pink{
+    background-color: var(--pink);
+}
+.heavenly{
+    background-color: var(--heavenly);
+}
+.purple{
+    background-color: var(--purple);
+}
+.yellow{
+    background-color: var(--yellow);
+}
 
+/**********************sesta-szione********************/
+.section-six {
+    background-color: var(--heavenly);
+    padding: 60px 0;
+}
+.section-six-flex {
+    align-items: flex-start;
+}
 
+.section-six h2 {
+    color: var(--bordeaux);
+    width: 70%;
+}
 
+.btn-white-2 {
+    display: block;
+    text-decoration: none;
+    background-color: var(--white);
+    color: var(--black);
+    width: 30%;
+    padding: 10px;
+    text-align: center;
+}
+/**********************settima-szione********************/
+.section-seven li {
+    border-bottom: 1px solid var(--black);
+    padding: 20px 0;
+    list-style: none;
+}
+
+li.view-hidden h4 {
+    padding: 20px 0;
+
+}
+
+.hidden {
+    display: none;
+}
+
+li.view-hidden:hover .hidden {
+    display: block;
+}
 
 
 
@@ -308,9 +405,40 @@ h2{
 
 
 /* footer */
-footer{
+footer {
     background-color: var(--black);
+    min-height: 280px;
+    padding: 30px
+}
+
+footer nav {
+    padding-bottom: 20px;
+}
+
+footer nav li a {
     color: var(--white);
+}
+
+footer nav li h4 {
+    padding-bottom: 15px;
+    color: var(--white);
+}
+
+footer nav li {
+    padding: 10px;
+}
+
+footer div {
+    padding: 20px;
+    border-top: 1px solid var(--white);
+    color: var(--white);
+}
+#lang-select {
+    text-decoration: none;
+    color: var(--white);
+    background-color: var(--black);
+    min-width: 60px;
+    border-color: transparent;
 }
 
 
