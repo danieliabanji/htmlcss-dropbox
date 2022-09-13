@@ -130,7 +130,9 @@ h1{
     bottom: 100px;
     left: 0;
     font-size: 45px;
+    color: var(--black);
 }
+
 
 /***************************main************************/
 /*************************prima sezione*****************/
@@ -268,12 +270,12 @@ div#radio-find label {
 .line-height{
     line-height: 20px;
 }
-/*************************fine-prima-seconda*****************/
+/*************************fine-seconda-sezione*****************/
 /*************************quarta-sezione*********************/
 #fourth-section h2{
     padding-bottom: 70px;
 }
-/*************************fine-prima-seconda*****************/
+/*************************fine-quarta-sezione*****************/
 /*************************quinta-sezione*********************/
 #fifth-section {
     width: 100%;
@@ -295,14 +297,16 @@ div#radio-find label {
     padding-bottom: 100%;
 }
 /**************immagini-loghi-in-quadrati-piccoli************/
-.square img{
-    /* fill: var(--white); */
+.square svg{
     width: 50%;
     align-items: center;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%)
+}
+.square svg path{
+    fill: var(--white);
 }
 
 /**********************quadrato-centrale********************/
@@ -355,7 +359,7 @@ div.square-big-central img {
 .yellow{
     background-color: var(--yellow);
 }
-
+/*************************fine-quinta-sezione*****************/
 /**********************sesta-szione********************/
 .section-six {
     background-color: var(--heavenly);
@@ -379,6 +383,7 @@ div.square-big-central img {
     padding: 10px;
     text-align: center;
 }
+/*************************fine-sesta-sezione*****************/
 /**********************settima-szione********************/
 .section-seven li {
     border-bottom: 1px solid var(--black);
@@ -398,11 +403,7 @@ li.view-hidden h4 {
 li.view-hidden:hover .hidden {
     display: block;
 }
-
-
-
-
-
+/*************************fine-settima-sezione*****************/
 
 /* footer */
 footer {
