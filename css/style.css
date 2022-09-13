@@ -130,7 +130,10 @@ ul#menu li a{
 	text-decoration:none;
     
 }
-
+ul#menu li:hover{
+	background: var(--darkbeige);
+	color: var(--black);
+}
 ul#menu li a:hover{
 	background: var(--darkbeige);
 	color: var(--black);
@@ -151,6 +154,7 @@ ul#menu ul{
 }
 
 ul#menu li:hover ul{
+    background: var(--darkbeige);
 	opacity: 1;
 	visibility: visible;
 }
@@ -169,11 +173,9 @@ ul#menu ul a{
 }
 
 ul#menu ul a:hover{
-	background-color: var(--darkbeige);
+	background-color: var(--beige);
 	color: var(--black);
 }
-
-
 
 /***************************hero************************/
 #hero{
@@ -472,7 +474,11 @@ li.view-hidden:hover .hidden {
     display: block;
 }
 li.view-hidden:hover #freccia{
-    rotate: 180deg;
+    /* rotate: 180deg; */
+    transform: rotate(180deg);
+}
+li.view-hidden:hover #freccia{
+    transition: 0.5s;
 }
 
 
@@ -522,3 +528,13 @@ footer hr{
 }
 
 
+
+/********************************** seconda pagina ***********************/
+.dim{
+    max-width: 1000px;
+    height: 80px;
+    margin: 0 auto;
+}
+#nav{
+    padding-top: 30px;
+}
