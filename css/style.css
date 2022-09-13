@@ -14,12 +14,15 @@
     --purple: #0d2481;
     --yellow: #ffd830;
     --lightgray: #d0d0d3;
+    --beige: #f2eee8;
+    --darkbeige: #e8e1d7;
 }
 
 *{
     margin: 0%;
     padding: 0%;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 body{
@@ -76,7 +79,7 @@ body{
 /***************************navbar************************/
 header nav{
     width: 100%;
-    height: 80px;
+    height: 50px;
     position: fixed;
     top: 0;
     left: 0;
@@ -92,6 +95,9 @@ li > a{
     text-decoration: none;
     font-size: 15px;
 }
+#logo{
+    padding: 0px 10px;
+}
 .btn-blue{
     background-color: var(--blue);
     color: var(--white);
@@ -106,9 +112,67 @@ li > a{
 .btn-blue a{
     color: var(--white);
 }
-li:hover{
-    border-bottom: 2px solid rgba(128, 128, 128, 0.281);
+
+/********************** menu-a-tentida **************/
+ul#menu li {
+	margin:0;
+	padding:0;
+	display: block;
+	position: relative;
 }
+
+ul#menu li a {
+	float: left;
+	padding:12px 30px;
+	color: var(--black);
+	text-transform: uppercase;
+	text-decoration:none;
+}
+
+ul#menu li a:hover {
+	background: var(--darkbeige);
+	color: var(--black);
+}
+
+ul#menu ul {
+	margin:2px 0 0;
+	padding:0;
+	display:inline-block;
+	list-style: none;
+	opacity: 0;
+	visibility: hidden;
+	position: absolute;
+	top: 38px;
+	left: 0;
+	z-index:9999;
+	background: var(--beige);
+}
+
+ul#menu li:hover ul {
+	opacity: 1;
+	visibility: visible;
+}
+
+ul#menu ul li {
+	display: block;
+	border: 0;
+}
+
+ul#menu ul a {
+	padding:10px;
+	width: 130px;
+	display: block;
+	white-space: nowrap;
+	text-transform: none;
+}
+
+ul#menu ul a:hover {
+	background-color: var(--darkbeige);
+	color: var(--black);
+}
+
+
+
 /***************************hero************************/
 #hero{
     background-color: var(--heavenly);
@@ -135,6 +199,7 @@ h1{
     font-size: 45px;
     color: var(--black);
 }
+
 
 
 /***************************main************************/
@@ -300,16 +365,14 @@ div#radio-find label {
     padding-bottom: 100%;
 }
 /**************immagini-loghi-in-quadrati-piccoli************/
-.square svg{
+.square img{
+    filter:invert(1);
     width: 50%;
     align-items: center;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%)
-}
-.square svg path{
-    fill: var(--white);
 }
 
 /**********************quadrato-centrale********************/
