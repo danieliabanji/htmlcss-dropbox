@@ -79,7 +79,7 @@ body{
 /***************************navbar************************/
 header nav{
     width: 100%;
-    height: 50px;
+    height: 41px;
     position: fixed;
     top: 0;
     left: 0;
@@ -113,28 +113,30 @@ li > a{
     color: var(--white);
 }
 
+
 /********************** menu-a-tentida **************/
-ul#menu li {
+ul#menu li{
 	margin:0;
 	padding:0;
 	display: block;
 	position: relative;
 }
 
-ul#menu li a {
+ul#menu li a{
 	float: left;
 	padding:12px 30px;
 	color: var(--black);
 	text-transform: uppercase;
 	text-decoration:none;
+    
 }
 
-ul#menu li a:hover {
+ul#menu li a:hover{
 	background: var(--darkbeige);
 	color: var(--black);
 }
 
-ul#menu ul {
+ul#menu ul{
 	margin:2px 0 0;
 	padding:0;
 	display:inline-block;
@@ -148,25 +150,25 @@ ul#menu ul {
 	background: var(--beige);
 }
 
-ul#menu li:hover ul {
+ul#menu li:hover ul{
 	opacity: 1;
 	visibility: visible;
 }
 
-ul#menu ul li {
+ul#menu ul li{
 	display: block;
 	border: 0;
 }
 
-ul#menu ul a {
+ul#menu ul a{
 	padding:10px;
-	width: 130px;
+	width: 100%;
 	display: block;
 	white-space: nowrap;
 	text-transform: none;
 }
 
-ul#menu ul a:hover {
+ul#menu ul a:hover{
 	background-color: var(--darkbeige);
 	color: var(--black);
 }
@@ -469,9 +471,15 @@ li.view-hidden h4 {
 li.view-hidden:hover .hidden {
     display: block;
 }
+li.view-hidden:hover #freccia{
+    rotate: 180deg;
+}
+
+
+
 /*************************fine-settima-sezione*****************/
 
-/* footer */
+/******************************footer**********************/
 footer {
     background-color: var(--black);
     min-height: 280px;
@@ -496,9 +504,14 @@ footer nav li {
 }
 
 footer div {
-    padding: 20px;
-    border-top: 1px solid var(--white);
     color: var(--white);
+    padding-top: 20px;
+}
+footer hr{
+    width: 120px;
+    margin: 30px 0;
+    
+    
 }
 #lang-select {
     text-decoration: none;
