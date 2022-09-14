@@ -7,7 +7,7 @@
     --darkblue: #0061ff;
     --lightblue : #34a4d1;
     --lime: #8fba89;
-    --green: #a2cf50;
+    --green: #b6de1a;
     --lightlime: #b8cdb5;
     --bordeaux: #61082b;
     --red: #ff1c1c;
@@ -420,11 +420,17 @@ div.square-big-central img {
     width: 100px;
     margin-left: 30px;
 }
+.company{
+    padding-bottom: 300px;
+}
 
 /**********************colori-quadrati********************/
 .lime{
     background-color: var(--lime);
-    border: 15px solid var(--lightlime);
+    /* border: 15px solid var(--lightlime); */
+}
+.square:hover{
+    border: 15px solid rgba(255, 255, 255, 0.5);
 }
 .lightblue{
     background-color: var(--lightblue);
